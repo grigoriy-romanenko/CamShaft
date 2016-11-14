@@ -1,0 +1,12 @@
+Design
+1. Research in cam shaft profile calculation methodology.	(8h)	- 14.05.2016 	- resolved
+2. Creation of UML class diagram.				(8h)	- 15.05.2016 	- resolved
+Implementation
+3. Implementation of model and services				(24h)	- 16.05-18.05 	- resolved
+4. Implementation of UI	and controllers				(40h)	- 19.05-25.05	- resolved
+5. Refactoring							(32h)	- 26.05-01.06	- resolved
+Testing
+6. Implementation of unit tests					(16h)	- 02.06-03.06	- resolved
+7. Resolving Sonar issues					(8h)	- 04.06		- resolved
+Documentation
+8. Writing javadocs and software documentation			(16h)	- 06.06-07.06	- resolved

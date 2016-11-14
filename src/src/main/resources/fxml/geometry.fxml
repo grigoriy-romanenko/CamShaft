@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<?import com.amcbridge.camshaft.controller.controls.GeometryTextField?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="340.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.60"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <Label layoutX="249.0" layoutY="24.0" text="Follower type:"/>
+    <ChoiceBox fx:id="followerTypeChoiceBox" prefWidth="150.0" AnchorPane.rightAnchor="20.0"
+               AnchorPane.topAnchor="20.0"/>
+    <Button fx:id="nextSceneButton" layoutX="439.0" layoutY="306.0" mnemonicParsing="false" text="Next"
+            AnchorPane.bottomAnchor="9.0" AnchorPane.rightAnchor="20.0"/>
+    <Pane fx:id="translatingParamsPane" layoutX="23.0" layoutY="52.0" prefHeight="249.0" prefWidth="459.0">
+        <ImageView fitHeight="241.0" fitWidth="213.0" layoutX="3.0" layoutY="11.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <Image url="@../images/CamShaft_Type1.gif"/>
+        </ImageView>
+        <GeometryTextField parameter="X" pattern="-?((\d*)|(\d+\.\d*))" layoutX="343.0" layoutY="14.0" prefHeight="25.0"
+                           prefWidth="64.0"/>
+        <Label layoutX="322.0" layoutY="18.0" text="X"/>
+        <Label layoutX="417.0" layoutY="18.0" text="mm"/>
+        <GeometryTextField parameter="d" pattern="(\d*)|(\d+\.\d*)" layoutX="343.0" layoutY="45.0" prefHeight="25.0"
+                           prefWidth="64.0"/>
+        <Label layoutX="322.0" layoutY="49.0" text="d"/>
+        <Label layoutX="417.0" layoutY="49.0" text="mm"/>
+        <GeometryTextField parameter="Rmin" pattern="(\d*)|(\d+\.\d*)" layoutX="343.0" layoutY="76.0" prefHeight="25.0"
+                           prefWidth="64.0"/>
+        <Label layoutX="306.0" layoutY="79.0" text="R min"/>
+        <Label layoutX="417.0" layoutY="78.0" text="mm"/>
+        <GeometryTextField parameter="precision" pattern="(\d*)|(\d+\.\d*)" layoutX="343.0" layoutY="107.0"
+                           prefHeight="25.0" prefWidth="64.0"/>
+        <Label layoutX="288.0" layoutY="110.0" text="Precision"/>
+    </Pane>
+    <Pane fx:id="rotatingParamsPane" layoutX="23.0" layoutY="52.0" prefHeight="249.0" prefWidth="459.0">
+        <ImageView fitHeight="216.0" fitWidth="270.0" layoutX="4.0" layoutY="11.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <Image url="@../images/CamShaft_Type2.gif"/>
+        </ImageView>
+        <GeometryTextField parameter="X" pattern="-?((\d*)|(\d+\.\d*))" layoutX="343.0" layoutY="14.0" prefHeight="25.0"
+                           prefWidth="64.0"/>
+        <Label layoutX="322.0" layoutY="18.0" text="X"/>
+        <Label layoutX="417.0" layoutY="18.0" text="mm"/>
+        <GeometryTextField parameter="Y" pattern="-?((\d*)|(\d+\.\d*))" layoutX="343.0" layoutY="45.0" prefHeight="25.0"
+                           prefWidth="64.0"/>
+        <Label layoutX="322.0" layoutY="49.0" text="Y"/>
+        <Label layoutX="417.0" layoutY="49.0" text="mm"/>
+        <GeometryTextField parameter="L" pattern="(\d*)|(\d+\.\d*)" layoutX="343.0" layoutY="76.0" prefHeight="25.0"
+                           prefWidth="64.0"/>
+        <Label layoutX="322.0" layoutY="79.0" text="L"/>
+        <Label layoutX="417.0" layoutY="78.0" text="mm"/>
+        <GeometryTextField parameter="d" pattern="(\d*)|(\d+\.\d*)" layoutX="343.0" layoutY="107.0" prefHeight="25.0"
+                           prefWidth="64.0"/>
+        <Label layoutX="322.0" layoutY="110.0" text="d"/>
+        <Label layoutX="417.0" layoutY="110.0" text="mm"/>
+        <GeometryTextField parameter="Rmin" pattern="(\d*)|(\d+\.\d*)" layoutX="343.0" layoutY="137.0" prefHeight="25.0"
+                           prefWidth="64.0"/>
+        <Label layoutX="308.0" layoutY="139.0" text="Rmin"/>
+        <Label layoutX="417.0" layoutY="138.0" text="mm"/>
+        <GeometryTextField parameter="precision" pattern="(\d*)|(\d+\.\d*)" layoutX="343.0" layoutY="167.0"
+                           prefHeight="25.0" prefWidth="64.0"/>
+        <Label layoutX="287.0" layoutY="170.0" text="Precision"/>
+    </Pane>
+</AnchorPane>

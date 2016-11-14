@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="300.0" prefWidth="566.0" xmlns="http://javafx.com/javafx/8.0.60"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <LineChart fx:id="chart" layoutX="6.0" layoutY="5.0" legendVisible="false" prefHeight="282.0" prefWidth="436.0">
+        <xAxis>
+            <NumberAxis label="φ" autoRanging="false" lowerBound="0" side="BOTTOM" tickUnit="30" upperBound="360"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis label="S" side="LEFT"/>
+        </yAxis>
+    </LineChart>
+    <Button fx:id="prevSceneButton" layoutX="456.0" layoutY="261.0" mnemonicParsing="false" text="Prev"/>
+    <Button fx:id="nextSceneButton" layoutX="505.0" layoutY="261.0" mnemonicParsing="false" text="Next"/>
+    <Button fx:id="openButton" layoutX="479.0" layoutY="21.0" mnemonicParsing="false" text="Open"/>
+    <Button fx:id="functionButton" layoutX="469.0" layoutY="65.0" mnemonicParsing="false" prefHeight="25.0"
+            prefWidth="66.0" text="Function"/>
+    <Button fx:id="clearButton" layoutX="479.0" layoutY="107.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="46.0" text="Clear"/>
+</AnchorPane>

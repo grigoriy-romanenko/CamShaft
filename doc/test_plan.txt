@@ -1,0 +1,3 @@
+To check correctness of calculations decided to test only service layer.
+Unit tests for all service layer classes will be implemented. Code coverage should be ~100%.
+SonarQube will be used to check code quality.
